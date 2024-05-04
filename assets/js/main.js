@@ -67,11 +67,22 @@
    */
   const scrollto = (el) => {
     let header = select('#header')
-    let offset = header.offsetHeight
+    let element = select(el)
+    let offsetHeader = header.offsetHeight
+    let elementOffset = element.offsetHeight
+    let elementPos = element.offsetTop
+    let widthWindow = window.innerWidth
 
-    let elementPos = select(el).offsetTop
+    let divider = 2
+    if (widthWindow < 768) {
+      divider = 2.7
+      if (widthWindow < 375) {
+        divider = 2.9
+      }
+    }
+
     window.scrollTo({
-      top: elementPos - offset,
+      top: elementPos + parseInt(elementOffset / divider),
       behavior: 'smooth'
     })
   }
@@ -142,7 +153,8 @@
       e.preventDefault()
 
       let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
+      let navbarClasslist = navbar?.classList?.contains('navbar-mobile')
+      if (navbarClasslist) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
         navbarToggle.classList.toggle('bi-list')

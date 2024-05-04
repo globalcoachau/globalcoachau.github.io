@@ -44,8 +44,8 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="bi bi-phone"></i> +1 5589 55488 55
+        <i class="bi bi-envelope"></i> <a href="mailto:bookings@globalcoachwa.com.au">bookings@globalcoachwa.com.au</a>
+        <i class="bi bi-phone"></i> <a href="https://wa.me/+61410116357" target="_blank">+61410116357</a>
       </div>
     </div>
   </div>
@@ -54,7 +54,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       <a href="index.html" class="logo me-auto"><img src="assets/img/logo/logo-long-header2.png" alt="" class="img-fluid"></a>
-      <a href="tel:+1234567890" class="appointment-btn scrollto">
+      <a href="#request" class="request-btn scrollto">
         <span class="d-none d-md-inline">
           Book Now
         </span>
@@ -73,7 +73,7 @@
         With our dedication to professionalism, we guarantee seamless and memorable travel experiences.<br/>
         Trust us with every detail of your journey.<br/>
       </h2>
-      <a href="tel:+1234567890" class="btn-get-started scrollto">Book Now</a>
+      <a href="#request" class="btn-get-started scrollto">Book Now</a>
     </div>
   </section><!-- End Hero -->
 
@@ -252,38 +252,7 @@
       <div class="container-fluid">
         <div class="row g-0">
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/1.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/1.jpg" alt="" class="img-fluid" loading="lazy">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/2.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/2.jpg" alt="" class="img-fluid" loading="lazy">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/3.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/3.jpg" alt="" class="img-fluid" loading="lazy">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/4.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/4.jpg" alt="" class="img-fluid" loading="lazy">
-              </a>
-            </div>
-          </div>
-
+          <!-- Service -->
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/5.jpg" class="galelry-lightbox">
@@ -296,22 +265,6 @@
             <div class="gallery-item">
               <a href="assets/img/gallery/6.jpg" class="galelry-lightbox">
                 <img src="assets/img/gallery/6.jpg" alt="" class="img-fluid" loading="lazy">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/7.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/7.jpg" alt="" class="img-fluid" loading="lazy">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/8.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/8.jpg" alt="" class="img-fluid" loading="lazy">
               </a>
             </div>
           </div>
@@ -332,10 +285,35 @@
             </div>
           </div>
 
+          <!-- Destination -->
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/11.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/11.jpg" alt="" class="img-fluid" loading="lazy">
+              <a href="assets/img/destination/2.jpg" class="galelry-lightbox">
+                <img src="assets/img/destination/2.jpg" alt="" class="img-fluid" loading="lazy">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/destination/4.jpg" class="galelry-lightbox">
+                <img src="assets/img/destination/4.jpg" alt="" class="img-fluid" loading="lazy">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/destination/1.jpg" class="galelry-lightbox">
+                <img src="assets/img/destination/1.jpg" alt="" class="img-fluid" loading="lazy">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/destination/3.jpg" class="galelry-lightbox">
+                <img src="assets/img/destination/3.jpg" alt="" class="img-fluid" loading="lazy">
               </a>
             </div>
           </div>
@@ -345,6 +323,221 @@
       </div>
     </section>
     <!-- End Gallery Section -->
+
+    <!-- ======= Request Section ======= -->
+    <section id="request" class="request section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Quote Request Form</h2>
+        </div>
+
+        <form class="quote-request-form" id="submit-quote-request-form">
+
+          <!-- Basic Section -->
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <label for="name" class="form-requests">Name <span class="form-request-required">*</span></label>
+              <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <label for="email" class="form-requests">Email <span class="form-request-required">*</span></label>
+              <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" required>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <label for="phone" class="form-requests">Phone <span class="form-request-required">*</span></label>
+              <input type="tel" class="form-control" name="phone" id="phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+              <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <!-- Service Section -->
+            <div class="col-md-6 form-group mt-3">
+              <label for="service-type-form" class="form-requests">Service Type <span class="form-request-required">*</span></label>
+              <select name="service-type-form" id="service-type-form" class="form-select" required>
+                <option value="">Please Specify</option>
+                <option value="Airline crew transportation hotel/Airport (Malaysia Airlines)">Airline crew transportation hotel/Airport (Malaysia Airlines)</option>
+                <option value="Airline crew transportation (Qantas Airlines)">Airline crew transportation (Qantas Airlines)</option>
+                <option value="Tours">Tours</option>
+                <option value="Private Airport Transfers">Private Airport Transfers</option>
+                <option value="Dinner Transfers">Dinner Transfers</option>
+                <option value="Stadium Event Transfers">Stadium Event Transfers</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+
+            <!-- Transfer Section -->
+            <div class="col-md-6 form-group mt-3">
+              <label for="transfer-type" class="form-requests">Transfer Type <span class="form-request-required">*</span></label><br/>
+              <select name="transfer-type" id="transfer-type" class="form-select" required>
+                <option value="">Please Specify</option>
+                <option value="One Way">One Way</option>
+                <option value="Return">Return</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Passengers Section -->
+          <div class="row">
+            <div class="form-group mt-3">
+              <label for="passengers" class="form-requests">Passengers <span class="form-request-required">*</span></label><br/>
+              <select name="passengers" id="passengers" class="form-select" required>
+                <option value="">Please Specify</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8+ (Please specify exact amount of passengers below)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Passenger Section 2 -->
+          <div class="row">
+
+            <div class="col-md-4 form-group mt-3">
+              <label for="cabin-sized-luggages" class="form-requests">How Many Cabin-sized Luggages? <span style="font-size: small; font-weight: lighter;">(40 - 48cm)</span></label>
+              <select name="cabin-sized-luggages" id="cabin-sized-luggages" class="form-select">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-md-4 form-group mt-3">
+              <label for="medium-sized-luggages" class="form-requests">How Many Medium-sized Luggages? <span style="font-size: small; font-weight: lighter;">(63 - 67cm)</span></label>
+              <select name="medium-sized-luggages" id="medium-sized-luggages" class="form-select">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-md-4 form-group mt-3">
+              <label for="large-sized-luggages" class="form-requests">How Many Large-sized Luggages? <span style="font-size: small; font-weight: lighter;">(78cm)</span></label>
+              <select name="large-sized-luggages" id="large-sized-luggages" class="form-select">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-md-4 form-group mt-3">
+              <label for="extra-large-sized-luggages" class="form-requests">How Many Extra Large-sized Luggages? <span style="font-size: small; font-weight: lighter;">(82 - 87cm)</span></label>
+              <select name="extra-large-sized-luggages" id="extra-large-sized-luggages" class="form-select">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-md-4 form-group mt-3">
+              <label for="baby-seats" class="form-requests">Baby Seats</label>
+              <select name="baby-seats" id="baby-seats" class="form-select">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-md-4 form-group mt-3">
+              <label for="flight-number" class="form-requests">Flight Number</label>
+              <input type="text" name="flight-number" class="form-control" id="flight-number">
+              <div class="validate"></div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6 form-group mt-3">
+              <label for="pickup-from" class="form-requests">Pickup From <span class="form-request-required">*</span></label>
+              <input type="text" name="pickup-from" class="form-control" id="pickup-from" required>
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-md-6 form-group mt-3">
+              <label for="destination" class="form-requests">Destination <span class="form-request-required">*</span></label>
+              <input type="text" name="destination" class="form-control" id="destination" required>
+              <div class="validate"></div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-4 form-group mt-3">
+              <label for="pickup-date" class="form-requests">Pickup Date <span class="form-request-required">*</span></label>
+              <input type="date" name="pickup-date" class="form-control" id="pickup-date" required>
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-md-4 form-group mt-3">
+              <label for="pickup-time" class="form-requests">Pickup Time <span class="form-request-required">*</span></label>
+              <input type="text" name="pickup-time" class="form-control" id="pickup-time" required>
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-md-4 form-group mt-3">
+              <label for="ampm" class="form-requests">AM/PM <span class="form-request-required">*</span></label>
+              <select name="ampm" id="ampm" class="form-select" required>
+                <option value="">Pick AM/PM</option>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="message" class="form-requests">Message/Special Requirements</label>
+            <textarea id="message" name="message" rows="5" class="form-control"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your request request has been sent successfully. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Submit Quote Request</button></div>
+        </form>
+
+      </div>
+    </section>
+    <!-- End Request Section -->
 
   </main>
   <!-- End #main -->
@@ -376,7 +569,7 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/form-send/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
