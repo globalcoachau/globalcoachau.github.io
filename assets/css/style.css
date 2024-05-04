@@ -193,32 +193,6 @@ h6 {
   max-height: 40px;
 }
 
-/**
-* Appointment Button *
-*/
-.appointment-btn {
-  margin-left: 25px;
-  background: #1977cc;
-  color: #fff;
-  border-radius: 50px;
-  padding: 8px 25px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-  display: inline-block;
-}
-
-.appointment-btn:hover {
-  background: #166ab5;
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .appointment-btn {
-    display: none;
-  }
-}
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1039,17 +1013,49 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Appointments
+# Requests
 --------------------------------------------------------------*/
-.appointment .php-email-form {
+
+/**
+* Request Button *
+*/
+.request-btn {
+  margin-left: 25px;
+  background: #1977cc;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.request-btn:hover {
+  background: #166ab5;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .request-btn {
+    display: none;
+  }
+}
+
+.form-requests {
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+.request .quote-request-form {
   width: 100%;
 }
 
-.appointment .php-email-form .form-group {
+.request .quote-request-form .form-group {
   padding-bottom: 8px;
 }
 
-.appointment .php-email-form .validate {
+.request .quote-request-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1057,7 +1063,7 @@ section {
   font-size: 13px;
 }
 
-.appointment .php-email-form .error-message {
+.request .quote-request-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1066,11 +1072,11 @@ section {
   font-weight: 600;
 }
 
-.appointment .php-email-form .error-message br+br {
+.request .quote-request-form .error-message br+br {
   margin-top: 25px;
 }
 
-.appointment .php-email-form .sent-message {
+.request .quote-request-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1079,14 +1085,14 @@ section {
   font-weight: 600;
 }
 
-.appointment .php-email-form .loading {
+.request .quote-request-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.appointment .php-email-form .loading:before {
+.request .quote-request-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1098,31 +1104,36 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.appointment .php-email-form input,
-.appointment .php-email-form textarea,
-.appointment .php-email-form select {
+.request .quote-request-form input,
+.request .quote-request-form textarea,
+.request .quote-request-form select {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   padding: 10px !important;
 }
 
-.appointment .php-email-form input:focus,
-.appointment .php-email-form textarea:focus,
-.appointment .php-email-form select:focus {
+.request .quote-request-form input:focus,
+.request .quote-request-form textarea:focus,
+.request .quote-request-form select:focus {
   border-color: #1977cc;
 }
 
-.appointment .php-email-form input,
-.appointment .php-email-form select {
+.request .quote-request-form input,
+.request .quote-request-form select {
   height: 44px;
 }
 
-.appointment .php-email-form textarea {
+.form-request-required {
+  color: #ed3c0d;
+  font-weight: bold;
+}
+
+.request .quote-request-form textarea {
   padding: 10px 12px;
 }
 
-.appointment .php-email-form button[type=submit] {
+.request .quote-request-form button[type=submit] {
   background: #1977cc;
   border: 0;
   padding: 10px 35px;
@@ -1131,7 +1142,7 @@ section {
   border-radius: 50px;
 }
 
-.appointment .php-email-form button[type=submit]:hover {
+.request .quote-request-form button[type=submit]:hover {
   background: #1c84e3;
 }
 
