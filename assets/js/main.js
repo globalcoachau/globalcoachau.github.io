@@ -233,4 +233,35 @@
    */
   new PureCounter();
 
+  /**
+   * 
+   * Carousel and slider for hero bg
+   */
+  document.addEventListener("DOMContentLoaded", function() {
+    const folder = '/assets/img/hero-slider/'; // Path to the folder containing the images
+    const numImages = 6; // Number of images in the folder
+
+    const carouselContainer = document.querySelector('.background-carousel');
+  
+    // Load images into the carousel container
+    for (let i = 1; i <= numImages; i++) {
+      const imgDiv = document.createElement('div');
+      imgDiv.classList.add('carousel-image');
+      imgDiv.style.backgroundImage = `url('${folder}${i}.jpg')`;
+      carouselContainer.appendChild(imgDiv);
+    }
+  
+    const images = document.querySelectorAll('.carousel-image');
+    let currentIndex = 0;
+    images[currentIndex].classList.add('active');
+  
+    const changeImage = () => {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add('active');
+    };
+  
+    setInterval(changeImage, 4 * 1000);
+  });
+
 })()

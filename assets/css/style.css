@@ -434,16 +434,64 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  position: relative;
   width: 100%;
   height: 90vh;
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
+  overflow: hidden;
   margin-bottom: -200px;
+}
+
+.background-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* animation: fadeInOut 3s infinite;  */
+}
+
+/* @keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+} */
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 #hero .container {
   position: relative;
-  color:rgb(255, 255, 255)
+  color: #fff;
+  z-index: 1; /* Ensure the text is above the overlay */
+}
+
+#hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
 #hero h1 {
@@ -452,7 +500,6 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  color: #fff;
 }
 
 #hero h2 {
@@ -533,19 +580,25 @@ h6 {
   left: 0;
   width: 100%;
   height: 90vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(0, 0, 0, 0.35)));
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
 @media screen and (max-width: 768px) {
   .hero_bg_box::before {
     height: 100%;
   }
+
+  #hero {
+    height: 96vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .hero_bg_box::before {
     height: 100%;
+  }
+  
+  #hero {
+    height: 96vh;
   }
 }
 
