@@ -1553,14 +1553,24 @@ section {
 /*--------------------------------------------------------------
 # Partner
 --------------------------------------------------------------*/
-.partner_image {
-  height: 100px;
-  max-width: 100%; 
-  max-height: 100%;
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  text-align: center;
+  margin: 0;
 }
 
-.partner {
-  text-align: center;
+.partner_image {
+  height: 100px;
+  object-fit: contain;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  filter: none;
 }
 
 /*--------------------------------------------------------------
